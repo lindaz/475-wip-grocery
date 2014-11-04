@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Housemates App</title>
+    <link rel="icon" type="image/ico" href="images/logo.ico"/>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,700,400' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/home.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+  </head>
+  <body>
+    <h1 style="font-size:40px"> Homies </h1>
+    <i>The application for passive-aggressive housemates</i>
+    <br><br><br>
+    <div id="login-box">
+      <h2>Welcome!</h2>
+      <form class="form" method="post" action="/login">
+        <div class="form-group">
+          <input id="login-email" type="text" class="form-control" name="email" placeholder="Email">
+        </div>
+        <div class="form-group">
+          <input id="login-password" type="password" class="form-control" name="password" placeholder="Password">
+        </div>
+
+        <button id="button1" type="submit" class="btn btn-warning btn-lg">Login</button>
+      </form>
+      <!-- show any messages that come back with authentication -->
+      <% if (message.length > 0) { %>
+        <div class="alert alert-danger"><%= message %></div>
+      <% } %>
+      <br><br>
+      <p></p>Are you new? Sign up for an account<br>
+      <a href="/signup"><input id="button2" value="Register"></a>
+      <!-- <form class="form" method="get" action="/localLogin">
+        <input id="login-username" type="text" placeholder="Username"/><br>
+        <input id="login-password" type="password" placeholder="Password"/><br>
+        <input id="button1"  type="submit" value="Go"/>
+      </form> -->
+
+    </div> <!-- login-box -->
+
+  </body>
+</html>

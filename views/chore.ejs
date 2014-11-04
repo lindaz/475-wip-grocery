@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Housemates App</title>
+    <link rel="icon" type="image/ico" href="images/logo.ico"/>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,700,400' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/dashboard.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/script_chore.js"></script>
+  </head>
+  <body>
+    <div class="menu">
+      <div id="settings">
+        <a href="/settings"><img src="images/icon_settings.png" width="50px"></a>
+      </div>
+      <div id="logout"><a href="/logout"><i>Logout</i></a></div>
+      <div id="username">
+        <%= user.name %>
+      </div> <!-- username -->
+      <div id="title">
+        <a href="/dashboard">Homies</a>
+      </div> <!-- title -->
+    </div> <!-- menu -->
+
+    <div class="wrapper">
+      <div class="sidebar">
+        <a href="/chores" class="tooltip" title="CHORES"><img src="images/sidebar-icon_chores.png" title=""></a>
+        <a href="/bills" class="tooltip" title="BILLS"><img src="images/sidebar-icon_bills.png" title=""></a>
+        <a href="/calendar" class="tooltip" title="CALENDAR"><img src="images/sidebar-icon_cal.png" title=""></a>
+        <a href="/grocery" class="tooltip" title="GROCERY"><img src="images/sidebar-icon_grocery.png" title=""></a>
+        <a href="/chat" class="tooltip" title="CHAT"><img src="images/sidebar-icon_chat.png" title=""></a>
+      </div> <!-- sidebar -->
+
+      <div class="content-dash">
+        <h1>Chore Management</h1>
+        <form class="form" method="post" action="/chore_add_pg">
+          <button type="submit" class="btn btn-primary">Add chore</button>
+        </form>
+
+        <!-- <button id="add_chore_b" class="btn btn-primary">Add chore</button> -->
+
+        <div id="add_chore_d">
+
+        </div>
+
+        <h2>All Chores</h2>
+        <div id="all-chores">
+          <h3>My Chores</h3>
+          <div id="my-chores"></div>
+          <br>
+          <h3>Their Chores</h3>
+          <div id="their-chores">
+          </div>
+        </div>
+       <!--  <h2>This Week </h2>
+        <table id="chores-tbl">
+          <tr>
+            <th>YOUR CHORES</th><th></th>
+            <th>THEIR CHORES</th>
+          </tr>
+          <tr>
+            <td>
+              TU - Garbage<br>
+              TR - Gas Bill
+            </td>
+            <td>
+              <button>View Cal</button><br>
+              <button>View Cal</button>
+            </td>
+            <td>
+              MO - Bathroom - Katie<br>
+              WE - Floors - Sam <br>
+              TR - Dishes - Sam
+            </td>
+            <td>
+              <button>+ Cal</button><br>
+              <button>+ Cal</button><br>
+              <button>+ Cal</button>
+            </td>
+          </tr>
+        </table>
+        <h2>Next Week </h2>
+        <table id="chores-tbl">
+          <tr>
+            <th>YOUR CHORES</th><th></th>
+            <th>THEIR CHORES</th>
+          </tr>
+          <tr>
+            <td>
+              WE - Floors<br>
+            </td>
+            <td>
+              <button>+ Cal</button><br>
+            </td>
+            <td>
+              MO - Bathroom - Sam <br>
+              TU - Electric Bill - Katie<br>
+              TR - Dishes - Katie <br>
+            </td>
+            <td>
+              <button>+ Cal</button><br>
+              <button>View Cal</button><br>
+              <button>View Cal</button><br>
+          </tr>
+        </table> -->
+        <!-- <form class="form" method="get" action="/auth/google">
+          <button type="submit" class="btn btn-primary">Click here to log into Google Calendar</button>
+        </form> -->
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+
+      </div> <!-- content-dash -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

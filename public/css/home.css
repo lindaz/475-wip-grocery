@@ -1,0 +1,89 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+	background: #33828f;
+	margin: 0px;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+	text-align: center;
+	color: white;
+	padding-top: 30px;
+
+	/*background: url(bkgd_home2.png) repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;*/
+}
+
+h1{
+	font-family: 'Pacifico', cursive;
+	margin-bottom: 0px;
+}
+
+#login-box{
+	background: #096f7a;
+	width: 300px;
+	height: 250px;
+    border-radius: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    padding: 5px;
+    text-align: center;
+}
+
+#login-email, #login-password, #signup-email, #signup-password, #signup-firstname, #signup-lastname{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border: none;
+	padding: 2px;
+	padding-left: 8px;
+	width: 200px;
+	height: 30px;
+	font-size: 15px;
+	background: #044e56;
+	border-radius: 10px;
+	color: white;
+}
+
+#button1{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border: none;
+	background: #33828f;
+	border-radius: 10px;
+	width: 50px;
+	height: 30px;
+	font-size: 15px;
+	color: white;
+	opacity: 0.7;
+	cursor: pointer;
+}
+
+#signup-box{
+	background: #096f7a;
+	width: 300px;
+	height: 400px;
+    border-radius: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    padding: 5px;
+    text-align: center;
+}
+
+#button2{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border: white;
+	background: #33828f;
+	border-radius: 10px;
+	width: 70px;
+	height: 30px;
+	font-size: 15px;
+	color: white;
+	text-align: center;
+	opacity: 0.7;
+	cursor: pointer;
+}
